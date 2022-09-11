@@ -1,0 +1,132 @@
+body {
+  background: #febafc;
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.topnav {
+  background-color: #d3c3de;
+  overflow: hidden;
+  width: auto;
+  display: inline-flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 10px 10px #8a6592;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #311841;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s ease;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #311841;
+  transition: 1s ease;
+}
+
+.topnav a.active {
+  background-color: #ea57c2;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.gallery {
+  --s: 150px;
+  --g: 3px;
+  --f: 1.5;
+  margin-top: 18px;
+  display: grid;
+  gap: var(--g);
+  width: 500px;
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3, auto);
+  border-radius: 30px;
+  box-shadow: 10px 10px #8a6592;
+  background: #8a6592;
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+  transition: 0.35s linear;
+  border-radius: 30px;
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+  width: calc(var(--s) * var(--f));
+  height: calc(var(--s) * var(--f));
+}
+
+.pity:hover {
+  width: 60%;
+  filter: opacity(100%);
+  filter: #f7d1cd;
+  transition: 1s ease;
+}
+
+.andy:hover {
+  width: 60%;
+  filter: opacity(100%);
+  filter: #f7d1cd;
+  transition: 1s ease;
+}
+
+.cupid:hover {
+  width: 60%;
+  filter: opacity(100%);
+  filter: #f7d1cd;
+  transition: 1s ease;
+}
+
+@font-face {
+  src: url("Ghastly\ Panic.ttf");
+  font-family: ghast;
+}
+
+.ghast {
+  margin-left: 10px;
+  font-family: ghast;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.logo {
+  margin-left: 40px;
+  font-family: ghast;
+  font-size: 23px;
+  letter-spacing: 10px;
+}
+
+.hint {
+  font-size: 15px;
+  color: #ffe8fe;
+}
